@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+           <h1>Tu Tienda Confiable Mass</h1> 
+        </div>
+    </header>
+    <main>
+        <section class="section-1">
+            <h2>Aqui se seleccionara al Asar tu cupon</h2>
+            <button onclick="escojerAlAsar()">Preciona para ver tu cupon de Descuento</button>
+            <p id="asar-cupon"></p>
+        </section>
+        <section class="section-artefactos--container">
+            <h2>Artefactos con descuento Disponible</h2>
+            <div class="principal--container-artefact">
+                <div class="artefactos--container">
+                    <div class="artefactos-text">
+                        <h3>Televisor<br> Led</h3>
+                        <p>$1000</p>
+                    </div>
+                    <div class="background tv"></div>
+                </div>
+                <div class="artefactos--container">
+                    <div class="artefactos-text">
+                        <h3>Refrigeradora<br> Led</h3>
+                        <p>$1200</p>
+                    </div>
+                    <div class="background refri"></div>
+                </div>
+                <div class="artefactos--container">
+                    <div class="artefactos-text">
+                        <h3>Lavadora<br> Smarth</h3>
+                        <p>$850</p>
+                    </div>
+                    <div class="background lavadora"></div>
+                </div>
+                <div class="artefactos--container">
+                    <div class="artefactos-text">
+                        <h3>Licuadora<br> Legion</h3>
+                        <p>$200</p>
+                    </div>
+                    <div class="background licuadora"></div>
+                </div>
+                <div class="artefactos--container">
+                    <div class="artefactos-text">
+                        <h3>Laptop Lenovo<br> Legion</h3>
+                        <p>$2000</p>
+                    </div>
+                    <div class="background laptop"></div>
+                </div>
+                <div class="artefactos--container">
+                    <div class="artefactos-text">
+                        <h3>Cocina <br>Electrica</h3>
+                        <p>$1050</p>
+                    </div>
+                    <div class="background cocina"></div>
+                </div>
+            </div>
+            <section class="section--container-form">
+                <div class="h2-form">
+                    <h2>Aqui puedes calcular tu precio con descuento ingresando el nombre de tu cupon</h2>
+                </div>
+                
+                <form action="" class="form-container">
+                    <div>
+                        <label for="price">Escribe el precio del producto</label>
+                        <input id="price" type="number">
+                    </div>
+                    <div>
+                        <label for="cupon">Escribe el cupo de descuento</label>
+                        <input id="cupon" type="text">
+                    </div>
+                    <button type="button" onclick="precioConDescuento()">ver tu precio</button>
+                    <p id="descuento-cupon"></p>
+                </form>
+            </section>
+            
+        </section>
+    </main>
+    <script src="./reto.js"></script>
+</body>
+</html>
